@@ -1,17 +1,16 @@
-// index.js
-require('dotenv').config()  // dotenv to use the environmental variables
+require('dotenv').config()  
 const express = require('express');
 const bodyParser = require('body-parser');
-const logger = require('./middlewares/logger.js');
-const apiRoutes = require('./routes/api.js');
+const loginCheck = require('./middlewares/loginCheck.js');
+const apiRoutes = require('./routes/DataApi.js');
 
-const app = express(); //creating express object app
-const port = process.env.PORT || 4000;  // getting port from env file
+const app = express(); 
+const port = process.env.PORT || 4000;  
 
-app.use(bodyParser.json()); //parse the body of the request
-app.use(logger); // logger file which logs all the details of req and res
+app.use(bodyParser.json()); 
+app.use(loginCheck); 
 
-app.use('/api', apiRoutes); // route path
+app.use('/data', apiRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

@@ -99,3 +99,37 @@
  GET /api/auth/users
  GET /api/auth/user
  GET /api/auth/user
+ GET /api
+ POST /api
+ POST /api
+ PUT /api/2
+ DELETE /api/2
+ POST /api/auth/login
+ GET /api/auth/user
+ GET /
+ GET /data
+ POST /login
+ POST /login
+ POST /user
+ POST /
+ POST /data/auth/login
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ POST /data/
+ GET /data/auth/login
+ GET /data/auth/user
+ GET /data/auth/user
+ POST /data/auth/user
+ POST /data/auth/login
+ GET /data/auth/login
+ GET /data/auth/user
